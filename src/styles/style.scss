@@ -1,3 +1,30 @@
-body {
-  background-color: lightblue;
+
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  background-color: black;
+  color: white;
+  
+  #{&}-heading {
+    font-size: 14px;
+  }
+  #{&}-paragraph {
+    font-size: 12px;
+  }
+
+  &:hover {
+    background-color: salmon;
+  }
+}
+
+footer {
+  background-color: lightcoral;
+  .footer-heading {
+    font-size: 10px;
+  }
+  .footer-paragraph {
+    font-size: 8px;
+  }
 }
