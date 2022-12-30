@@ -1,3 +1,76 @@
+// Variable di CSS
+
+/*
+:root {
+  --warna1: black;
+  --warna2: white;
+}
+
 body {
-  background-color: lightblue;
+  background-color: var(--warna1);
+}
+
+h1, p {
+  color: var(--warna2);
+}
+*/
+
+
+// Variable di SASS
+// $warna3: grey;
+// $warna1: null;
+
+// body {
+//   $warna1: black !global;
+//   $warna2: pink;
+  
+//   .main {
+//     background-color: $warna1;
+//   }
+
+//   h1, p {
+//     color: $warna2;
+//   }
+// }
+
+// footer {
+//   background-color: $warna3;
+
+//   h1, p {
+//     color: $warna1;
+//   }
+// }
+
+
+// Map di SASS
+// $dark-background: black;
+// $dark-text: white;
+
+// $light-background:white;
+// $light-text: black;
+
+$dark: (
+  'background': black,
+  'text': white,
+);
+
+$light: (
+  'background': rgb(219, 219, 219),
+  'text': black
+);
+
+.main {
+  background-color: map-get($map: $dark, $key: 'background');
+  
+  h1, p {
+    color: map-get($map: $dark, $key: 'text');
+  }
+}
+
+footer {
+  background-color: map-get($map: $light, $key: 'background');
+
+  h1, p {
+    color: map-get($map: $light, $key: 'text');
+  }
 }
