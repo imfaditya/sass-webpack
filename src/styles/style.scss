@@ -28,3 +28,25 @@
     }
   }
 }
+
+// Arguments Pada Mixin
+@mixin flex-box($vertialPosition: start, $horizontalPosition: start) {
+  display: flex;
+  justify-content: $horizontalPosition;
+  align-items: $vertialPosition;
+  gap: 10px;
+}
+
+.container {
+  @include flex-box(center, end);
+  width: 600px;
+  height: 400px;
+  background-color: rgb(221, 221, 221);
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    text-align: center;
+    line-height: 50px;
+  }
+}
