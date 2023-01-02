@@ -1,0 +1,16 @@
+@mixin list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+@mixin flex-box($vertialPosition: start, $horizontalPosition: start) {
+  display: flex;
+  justify-content: $horizontalPosition;
+  align-items: $vertialPosition;
+  gap: 10px;
+}

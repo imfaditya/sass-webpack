@@ -1,0 +1,10 @@
+.header ul {
+  @include list-inline();
+  li {
+    background-color: rgb(0, 0, 0);
+    padding: .5em;
+    a {
+      color: white;
+    }
+  }
+};

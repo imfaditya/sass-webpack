@@ -1,0 +1,9 @@
+.footer ul {
+  @include list-inline();
+  li {
+    background-color: yellowgreen;
+    a {
+      color: rgb(0, 80, 0);
+    }
+  }
+}
