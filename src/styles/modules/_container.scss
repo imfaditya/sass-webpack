@@ -1,5 +1,7 @@
+@use 'mixin' as mx;
+
 .container {
-  @include flex-box(center, end);
+  @include mx.flex-box(center, end);
   width: 600px;
   height: 400px;
   background-color: rgb(221, 221, 221);

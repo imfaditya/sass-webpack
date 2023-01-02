@@ -1,5 +1,7 @@
+@use 'mixin';
+
 .header ul {
-  @include list-inline();
+  @include mixin.list-inline();
   li {
     background-color: rgb(0, 0, 0);
     padding: .5em;

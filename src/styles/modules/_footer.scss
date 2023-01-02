@@ -1,5 +1,7 @@
+@use 'mixin';
+
 .footer ul {
-  @include list-inline();
+  @include mixin.list-inline();
   li {
     background-color: yellowgreen;
     a {
